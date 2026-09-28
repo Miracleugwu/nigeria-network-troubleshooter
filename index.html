@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nigeria Network Troubleshooter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  📶 Nigeria Network Troubleshooter
+</header>
+
+<main>
+  <section class="hero">
+    <p>ANDROID • MOBILE NETWORK • DIAGNOSTICS</p>
+    <h1>Find out why your mobile internet is slow or not working.</h1>
+    <p>No account required. Answer a few questions and get a practical troubleshooting checklist.</p>
+  </section>
+
+  <section class="card">
+    <h2>Network diagnosis</h2>
+
+    <label>Your network</label>
+    <select id="network">
+      <option value="">Select network</option>
+      <option>MTN</option>
+      <option>Airtel</option>
+      <option>Glo</option>
+      <option>9mobile</option>
+      <option>Other</option>
+    </select>
+
+    <label>Main problem</label>
+    <select id="problem">
+      <option value="">Select problem</option>
+      <option value="slow">Internet is slow</option>
+      <option value="none">No internet connection</option>
+      <option value="drops">4G/5G keeps dropping</option>
+      <option value="calls">Calls are failing</option>
+      <option value="data">Data finishes unusually fast</option>
+    </select>
+
+    <label>Signal strength</label>
+    <select id="signal">
+      <option value="">Select signal level</option>
+      <option value="strong">Strong (4–5 bars)</option>
+      <option value="medium">Medium (2–3 bars)</option>
+      <option value="weak">Weak (0–1 bar)</option>
+      <option value="unknown">I don't know</option>
+    </select>
+
+    <label>Connection type</label>
+    <select id="type">
+      <option value="">Select connection</option>
+      <option>4G/LTE</option>
+      <option>5G</option>
+      <option>3G</option>
+      <option>2G</option>
+      <option>No signal</option>
+      <option>Unknown</option>
+    </select>
+
+    <button onclick="diagnose()">RUN DIAGNOSIS</button>
+  </section>
+
+  <section id="result" class="card result"></section>
+
+  <section class="card">
+    <h2>Safety checks</h2>
+    <ul>
+      <li>Never share your SIM PIN, banking PIN, OTP or password.</li>
+      <li>Do not install an APK just because it claims to boost your network.</li>
+      <li>DNS changes cannot create cellular signal where coverage is poor.</li>
+      <li>For persistent problems, record your location, time and network type before contacting your operator.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+Open-source troubleshooting project. Results are guidance, not a guarantee of network performance.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
